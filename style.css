@@ -1,0 +1,50 @@
+/* Style the navigation bar */
+@font-face {
+    font-family: 'Corrupted File';
+    src: url('corrupted_file-webfont.woff2') format('woff2'),
+         url('corrupted_file-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.navbar {
+  width: 100%;
+  background-color: blue;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: yellow;
+  text-decoration: none;
+  font-family: "Corrupted File";
+
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: black;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: black;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+
+
+
+}
